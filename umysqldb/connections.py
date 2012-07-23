@@ -7,15 +7,15 @@ import umysql
 import pymysql.connections
 from pymysql.constants import FIELD_TYPE
 
-from .util import setdocstring
-from .cursors import Cursor
-from .err import (
+from util import setdocstring
+from cursors import Cursor
+from err import (
     map_umysql_error_to_umysqldb_exception,
     map_runtime_error_to_umysqldb_exception,
     Error,
     OperationalError,
 )
-from .times import (
+from times import (
     encode_struct_time,
     encode_timedelta,
     encode_time,
